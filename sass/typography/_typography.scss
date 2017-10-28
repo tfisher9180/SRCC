@@ -1,0 +1,29 @@
+html {
+	font-size: 62.5%;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $theme-text;
+	font-family: $font__main;
+	font-weight: $font-main-normal;
+	@include font-size(1.6);
+	line-height: $font__line-height-body;
+
+	@media screen and (min-width: $screen-sm) {
+		@include font-size(1.8);
+	}
+
+	@media screen and (min-width: $screen-md) {
+		@include font-size(2);
+		line-height: 1.6;
+	}
+}
+
+@import "headings";
+
+@import "copy";

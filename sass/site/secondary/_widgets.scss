@@ -1,0 +1,317 @@
+.widget-area {
+	margin-top: 8%;
+	background: $theme-light-background;
+	padding: 5%;
+
+	a {
+		color: $theme-link;
+
+		&:hover {
+			color: $theme-text;
+		}
+	}
+
+	aside {
+		margin-bottom: 35px;
+
+		&:last-child {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+
+		.widget-title,
+		.widgettitle,
+		.widget-grofile h4 a {
+			margin-bottom: 20px;
+			line-height: 1.6;
+			@include font-size(2);
+
+			@media screen and (min-width: $screen-sm) {
+				margin-bottom: 35px;
+			}
+
+			@media screen and (min-width: $screen-md) {
+				margin-bottom: 20px;
+			}
+		}
+
+		ul {
+			margin: 0;
+
+			&.sub-menu,
+			.children {
+				margin: 4% 0 0 20px;
+
+				li:last-child {
+					margin-bottom: 0;
+					padding-bottom: 2%;
+					border-bottom: none;
+				}
+			}
+		}
+
+		li {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px dotted $theme-hr-border;
+			list-style: none;
+			position: relative;
+
+			&:before {
+				content: "\f0da";
+				font-family: "FontAwesome";
+				position: absolute;
+				left: -18px;
+				top: 3px;
+				color: #A1B0BD;
+				@include font-size(1.2);
+				display: none;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+
+			ul {
+
+				li {
+					list-style: circle;
+				}
+			}
+		}
+
+		@media screen and (min-width: $screen-sm) {
+			margin-bottom: 45px;
+		}
+	}
+
+	.textwidget {
+
+		p {
+			margin-bottom: 15px;
+		}
+	}
+
+	.widget-grofile {
+
+		h4 {
+			margin-top: 0;
+			margin-bottom: 20px;
+			line-height: 0.9;
+			text-align: center;
+
+			a {
+				color: $theme-text;
+
+				&:hover {
+					color: $theme-link;
+				}
+			}
+		}
+	}
+
+	.grofile-meta + h4 {
+		display: none;
+	}
+
+	.grofile-links {
+		margin-bottom: 20px;
+	}
+
+	.grofile-links + p,
+	.grofile-meta + p {
+		margin-bottom: 0;
+	}
+
+	@media screen and (min-width: $screen-md) {
+		@include font-size(1.6);
+	}
+}
+
+#calendar_wrap {
+	background: $theme-white;
+	border-right: none;
+	border-bottom: none;
+	color: $theme-text;
+	box-shadow: rgba(#000, 0.15) 0px 2px 2px -1px;
+}
+
+#wp_calendar {
+	@include font-size(1.6);
+	margin: 0;
+	max-width: 100%;
+
+	caption {
+		text-align: center;
+		background: #eaf1f5;
+		padding: 5px 10px;
+		font-weight: bold;
+	}
+
+	tr th,
+	tr td {
+		text-align: center;
+	}
+
+	tr th {
+		background: $theme-text;
+		color: $theme-white;
+		margin: -10px -10px 10px -10px;
+		@include font-size(1.1);
+		font-weight: bold;
+		padding: 10px 0;
+	}
+
+	tbody tr td {
+		padding: 2px 0;
+		border-right: 1px solid #f3f3f3;
+		border-top: 1px solid #f3f3f3;
+	}
+
+	tfoot td {
+		border-top: 1px solid #f3f3f3;
+		border-right: 1px solid #eee;
+		padding: 7px 0 5px 0;
+		font-weight: bold;
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+
+	a {
+		color: $theme-text;
+
+		&:hover {
+			color: $theme-link;
+		}
+	}
+}
+
+.widget_rss {
+
+	li {
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		.rsswidget {
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	.rss-date,
+	cite {
+		@include font-size(1.4);
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 10px 0;
+	}
+}
+
+.widget-grofile {
+	position: relative;
+}
+
+.widget {
+
+	.grofile-thumbnail {
+		max-width: 90px;
+		width: 90px;
+		display: block;
+		vertical-align: top;
+		border-radius: 100px;
+		margin: 0 auto 10px auto;
+	}
+}
+
+.grofile-meta {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
+.site-footer,
+.site-footer a {
+	color: rgba($theme-white, 0.8);
+}
+
+.site-footer {
+
+	.widget-area {
+		background: none;
+	}
+
+	.footer-widgets {
+		padding: 0;
+		margin-top: 0;
+		padding-top: 8%;
+		margin-bottom: 2%;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			padding: 15px 0;
+			border-bottom: dotted 1px rgba(255, 255, 255, 0.3);
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		ul {
+
+			li {
+				list-style-type: circle;
+			}
+		}
+	}
+
+	.sub-menu {
+		margin-left: 20px;
+	}
+
+	.widget_text {
+
+		a {
+			border-bottom: dotted 1px rgba(255, 255, 255, 0.3);
+		}
+	}
+
+	.widget-title {
+		font-size: 18px;
+		margin-bottom: 10px;
+		color: $theme-white;
+
+		@media screen and (min-width: $screen-sm) {
+			margin-bottom: 15px;
+		}
+
+		@media screen and (min-width: $screen-md) {
+			font-size: 20px;
+			margin-bottom: 25px;
+		}
+	}
+
+	li {
+
+		.rsswidget {
+			color: $theme-white;
+
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+}

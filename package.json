@@ -1,0 +1,27 @@
+{
+  "name": "srcc",
+  "version": "1.0.0",
+  "description": "Custom WordPress theme built from Underscores for a Surprise Regional Chamber of Commcerce website redesign.",
+  "main": "index.php",
+  "scripts": {
+    "postinstall": "gulp copy-assets"
+  },
+  "author": "Timothy Fisher",
+  "devDependencies": {
+    "autoprefixer": "^6.5.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-image": "^2.7.2",
+    "gulp-jshint": "^2.0.2",
+    "gulp-newer": "^1.3.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "jshint": "^2.9.4"
+  },
+  "dependencies": {
+    "bootstrap-sass-grid": "^4.0.1",
+    "font-awesome": "^4.7.0",
+    "jquery-match-height": "^0.7.2"
+  }
+}

@@ -1,0 +1,46 @@
+.flex-container {
+  display: flex;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+
+  a {
+    color: inherit;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    @include font-size(2.2);
+    padding: 0 8px;
+
+    @media screen and (min-width: $screen-md) {
+      @include font-size(1.6);
+    }
+  }
+}
+
+.container {
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: block;
+  position: relative;
+
+  @media screen and (min-width: $screen-sm) {
+    width: auto;
+  }
+
+  @media screen and (min-width: $screen-md) {
+    width: auto;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    width: auto;
+  }
+}
